@@ -1,0 +1,378 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Domas Buracas}
+\newcommand{\CVTitle}{{\CVAuthor} Resume}
+\newcommand{\CVNote}{Resume compiled on {\today}}
+\newcommand{\CVWebpage}{http://axquaris.github.io/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\par
+\href{mailto:dominykas@berkeley.edu}
+{dominykas@berkeley.edu}
+\,\SubBulletSymbol\,
++1\,(858)\,531-8039
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{http://www.berkeley.edu/}
+{\textbf{University of California - Berkeley}}
+
+\Gap
+\BulletItem
+B.A. in Computer Science
+\hfill
+\DatestampYMD{2017}{8}{0} --
+\DatestampYMD{2021}{5}{0}
+\begin{Detail}
+\SubBulletItem
+Current Coursework: Discrete Mathematics and Probability Theory (CS70),
+Structure and Interpretation of Computer Programs (CS61A),
+Data Science (CS 198-82), Linear Algebra (MATH54)
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://www.princeton.edu/}
+{\textbf{Princeton University}}
+
+\Gap
+\BulletItem
+\href{https://algorithmicthinking.org/}
+{Program in Algorithmic and Combinatorial Thinking (PACT) }
+\hfill
+\DatestampYMD{2017}{6}{0} --
+\DatestampYMD{2017}{7}{0}
+%%\begin{Detail}
+%%\SubBulletItem
+%%Studied algorithms fundamental to the Computer Science field through the perspective %%of Discrete Mathematics, Probability theory, and Combinatorics
+%%\end{Detail}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+\textbf{Languages:}
+Java (4 years),
+Python (6 years),
+Processing,
+JavaScript,
+HTML/CSS.
+
+\Entry
+\textbf{Libraries/Frameworks:}
+OpenCV,
+Numpy,
+Tensorflow,
+Robot Operating System (ROS),
+Box2D (via Fisica),
+Selenium,
+PyQt,
+AngularJS,
+Bootstrap,
+jQuery.
+
+\Entry
+\textbf{Tools:}
+Git/Github,
+Windows,
+OSX,
+Linux (Ubuntu 14.04, 16.04),
+Eclipse,
+Pycharm,
+QT Creator,
+Solidworks,
+Adobe Photoshop,
+Microsoft Suite.
+
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Bio-inspired AI, Software Development, Robotics, Machine Learning,
+Cognitive Science
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Entry
+\href{http://ew3.com/}
+{\textbf{eWorldWideWeb, Inc.} (ew3.com)}
+
+\Gap
+\BulletItem
+Web Automation Developer
+\hfill
+\DatestampYMD{2014}{6}{0} --
+\DatestampYMD{2015}{9}{0}
+\begin{Detail}
+\SubBulletItem
+Started as an Assistant Editor but was promoted after proposing solutions
+to automate domain-trading
+\SubBulletItem
+Implemented domain-trading algorithms and UI for non-technical users
+\end{Detail}
+
+\BigGap
+\Entry
+\href{http://www.veriskin.com/}
+{\textbf{Veriskin, Inc.} (veriskin.com)}
+
+\Gap
+\BulletItem
+Computer Vision Intern
+\hfill
+\DatestampYMD{2016}{7}{0} --
+\DatestampYMD{2016}{9}{0}
+\begin{Detail}
+\SubBulletItem
+Devised algorithms to perform noninvasive diagnostics on cancerous skin by analyzing its hemodynamics
+\end{Detail}
+
+\BigGap
+\Entry
+\href{http://www.neurotechnology.com/}
+{\textbf{Neurotechnology} (neurotechnology.com)}
+
+\Gap
+\BulletItem
+Visiting Robotics Intern
+\hfill
+\DatestampYMD{2017}{8}{0}
+\begin{Detail}
+\SubBulletItem
+Gave talk on merits of US's FIRST Robotics Competition and feasibility of starting
+such a competition in Lithuania
+\SubBulletItem
+Learned fundamentals of ROS framework and company’s proprietary robotics algorithms
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Personal Projects %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Personal Projects}
+{Personal Projects}
+{PDF:PersonalProjects}
+
+%Ecoblobs
+\Entry
+\href{http://axquaris.github.io/}
+{\textbf{Microbial Ecosystem Simulation}, on axquaris.github.io as Ecoblobs}
+
+\Gap
+\begin{Detail}
+\SubBulletItem
+Developed an object-oriented framework for simulating the interactions of 
+simple organisms
+\SubBulletItem
+Implemented diagnostic tools to quantify the effects of modifying 
+environment features such as ocean currents and sunlight
+\end{Detail}
+
+%Personal Website
+% \BigGap
+% \Entry
+% \href{http://axquaris.github.io/}
+% {\textbf{Personal Website}, axquaris.github.io}
+
+% \Gap
+% \begin{Detail}
+% \SubBulletItem
+% Applied Bootstrap and JQuery to create an aesthetically
+% pleasing, functional, and maintainable site
+% \SubBulletItem
+% This is where I host most of my projects and mini experiments
+% \end{Detail}
+    
+% \Entry
+% \textbf{Object Detection and Identification Demo}
+
+%Tensorflow Demo
+\BigGap
+\Entry
+\textbf{Object Detection and Recognition Demo}
+
+\Gap
+\begin{Detail}
+\SubBulletItem
+Applied a neural network pre-trained by Google to detect and identify household objects in a live video feed 
+\SubBulletItem
+Made use of Tensorflow (installed with GPU support) and OpenCV to build the demo
+\end{Detail}
+
+%AxNet
+\BigGap
+\Entry
+\href{http://axquaris.github.io/}
+{\textbf{Neural Pattern Generator}, on axquaris.github.io as AxNet}
+
+\Gap
+\begin{Detail}
+\SubBulletItem
+Implemented a neural oscillator network based on a research paper about "Modular Reactive Neurocontrol for Biologically Inspired Walking Machines"
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+\Entry
+\href{https://frcteam2984.github.io/}
+{\textbf{FIRST Robotics Team 2984}},
+La Jolla High School
+
+\Gap
+\BulletItem
+Mechanical Engineer
+\hfill
+\DatestampYMD{2013}{09}{0} --
+\DatestampYMD{2015}{05}{0}
+\begin{Detail}
+\SubBulletItem
+Worked with a small team to design, machine, assemble, and maintain the robot chassis and manipulator
+\end{Detail}
+
+\Gap
+\BulletItem
+Vice President of Engineering
+\hfill
+\DatestampYMD{2015}{09}{0} --
+\DatestampYMD{2017}{05}{0}
+\begin{Detail}
+\SubBulletItem
+Responsible for setting and enforcing feature deadlines
+\SubBulletItem
+Modernized team's design process by introducing CAD software to specify design parameters with much greater detail than paper blueprints
+\SubBulletItem
+Implemented a Trello board system to break down feature deadlines into bite-sized chunks that individuals could act on, improving productivity and engagement significantly
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\Entry
+English (Native language), Lithuanian (Fluent)
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\Entry
+Available upon request.
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+% \UseNoteFont%
+% \null\hfill%
+% [\textit{\CVNote}]
+
+\end{document}
